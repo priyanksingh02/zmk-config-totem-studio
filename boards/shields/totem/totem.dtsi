@@ -49,14 +49,14 @@
     
 };
 
-&usbd {
-    status = "okay";
-    cdc_acm_uart: cdc_acm_uart {
-        compatible = "zephyr,cdc-acm-uart";
-    };
-};
+// &usbd {
+//     status = "okay";
+//     cdc_acm_uart: cdc_acm_uart {
+//         compatible = "zephyr,cdc-acm-uart";
+//     };
+// };
 
-zephyr_udc0: &usbd {
-    compatible = "nordic,seeeduino_xiao_ble";
-    status = "okay";
-};
+// zephyr_udc0: &usbd {
+//     compatible = "nordic,seeeduino_xiao_ble";
+//     status = "okay";
+// };
