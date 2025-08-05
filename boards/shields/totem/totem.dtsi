@@ -3,13 +3,15 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+#include "totem-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <totem-layouts.dtsi>
 
-zephyr_udc0: usbd@deadbeef {
-    compatible = "vnd,usb-device";
-    /* ... */
+
+&xiao_d {
+    zephyr_udc0: usbd@deadbeef {
+        compatible = "vnd,usb-device";
+        /* ... */
+    };
 };
 
 / {
