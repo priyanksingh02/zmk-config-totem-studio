@@ -7,12 +7,12 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 
-&xiao_d {
-    zephyr_udc0: usbd@deadbeef {
-        compatible = "vnd,usb-device";
-        /* ... */
-    };
-};
+// &xiao_d {
+//     zephyr_udc0: usbd@deadbeef {
+//         compatible = "vnd,usb-device";
+//         /* ... */
+//     };
+// };
 
 / {
     chosen {
