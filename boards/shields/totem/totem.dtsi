@@ -7,16 +7,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 
-// &xiao_d {
-//     zephyr_udc0: usbd@deadbeef {
-//         compatible = "vnd,usb-device";
-//         /* ... */
-//     };
-// };
 
 / {
     chosen {
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &totem_layout;
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
         
@@ -55,9 +49,14 @@
     
 };
 
-// &usbd {
-//     status = "okay";
-//     cdc_acm_uart: cdc_acm_uart {
-//         compatible = "zephyr,cdc-acm-uart";
-//     };
-// };
+&usbd {
+    status = "okay";
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+
+zephyr_udc0: &usbd {
+    compatible = "nordic,seeeduino_xiao_ble";
+    status = "okay";
+};
