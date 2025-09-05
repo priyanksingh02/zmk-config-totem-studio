@@ -53,6 +53,13 @@
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
         };
+
+        next: next {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            label = "NEXT";
+        };
     };
 
     keymap {
@@ -77,10 +84,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q  &kp W  &kp E    &kp R    &kp T            &kp Y        &kp U     &kp I      &kp O    &kp P
-       &kp A  &kp S  &kp D    &kp F    &kp G            &kp H        &kp J     &kp K      &kp L    &kp L
-&kp Z  &kp Z  &kp X  &kp C    &kp V    &kp B            &kp N        &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp A
-                     &lt 3 C  &kp TAB  &lt NAV SPACE    &lt SYM RET  &kp BSPC  &kp BSPC
+       &kp Z    &kp Y      &kp U             &kp O                 &kp SEMICOLON        &kp Q         &kp L    &kp D         &kp P  &kp X
+       &kp C    &kp I      &kp E             &kp A                 &kp COMMA            &kp K         &kp H    &kp T         &kp N  &kp S
+&kp W  &kp SQT  &kp MINUS  &kp EQUAL         &kp PERIOD            &kp SLASH            &kp J         &kp M    &kp G         &kp B  &kp V  &kp F
+                           &mt LCTRL ESCAPE  &mt LEFT_SHIFT SPACE  &lt NAV BACKSPACE    &mt LCMD RET  &lt 2 R  &kp LEFT_ALT
             >;
         };
 
@@ -103,10 +110,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                               &trans    &trans     &trans      &mo ADJ   &kp KP_N0  &trans
+        &kp PAGE_UP    &kp HOME        &kp UP    &kp END    &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
+        &mo 3          &kp LEFT        &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
+&trans  &kp PAGE_DOWN  &kp LEFT_SHIFT  &kp DEL   &kp TAB    &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp DOT
+                                       &trans    &trans     &trans      &trans    &kp KP_N0  &trans
             >;
         };
 
@@ -129,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
-                                  &trans     &gif      &mo ADJ      &trans        &kp C_PP        &trans
+               &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &next
+               &kp EXCLAMATION  &kp ASTERISK   &kp UNDER         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI    &kp DOUBLE_QUOTES
+&kp BACKSLASH  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD  &kp SQT            &kp SLASH
+                                               &trans            &trans             &trans           &trans       &trans                &trans
             >;
         };
 
@@ -155,10 +162,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans       &trans    &trans  &kp F7       &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &bootloader  &trans    &trans  &bootloader  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans       &trans    &trans  &kp F1       &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans       &trans    &trans  &trans       &trans
+             &trans  &bt BT_CLR  &kp C_VOLUME_UP    &trans  &trans          &trans  &kp F7  &kp F8  &kp F9  &kp F12
+             &trans  &bt BT_NXT  &kp C_VOLUME_DOWN  &trans  &out OUT_TOG    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&bootloader  &trans  &bt BT_PRV  &trans             &trans  &trans          &trans  &kp F1  &kp F2  &kp F3  &kp F10  &bootloader
+                                 &trans             &trans  &trans          &trans  &trans  &trans
             >;
         };
     };
