@@ -1,11 +1,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define LY_SEL 0
-#define LY_BASE 1
-#define LY_NUM 2
-#define LY_SYM 3
-#define LY_NAV 4
+#define LY_BASE 0
+#define LY_NUM 1
+#define LY_SYM 2
+#define LY_NAV 3
+#define LY_SEL 4
 
 &mt {
   quick-tap-ms = <100>;
@@ -29,14 +29,6 @@
 
   keymap {
     compatible = "zmk,keymap";
-    sel_layer {
-      bindings = <
-        &none &none &none &none &none  &none &none &none &none &none
-        &none &none &none &none &none  &none &to LY_BASE &to LY_NUM &to LY_SYM &to LY_NAV
-        &none &none &none &none &none  &none &none &none &none &none
-        &none &none &none &none  &none &none &none &none
-      >;
-    };
     base_layer {
       bindings = <
         &kp Z  &kp Y  &kp U  &kp O  &kp SEMI    &kp Q  &kp L  &kp D  &kp P  &kp X
@@ -67,6 +59,14 @@
         &kp LALT &kp LCMD &kp LCTRL &kp LSHFT &none  &none &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN
         &none &none &none &none &none  &none &kp DEL &none &none &none
         &none &kp BSPC &kp SPACE &kp TAB  &lt LY_SEL ENTER &none &kp ESC &none
+      >;
+    };
+    sel_layer {
+      bindings = <
+        &none &none &none &none &none  &none &none &none &none &none
+        &none &none &none &none &none  &none &to LY_BASE &to LY_NUM &to LY_SYM &to LY_NAV
+        &none &none &none &none &none  &none &none &none &none &none
+        &none &none &none &none  &none &none &none &none
       >;
     };
   };
