@@ -1,11 +1,11 @@
 #include <physical_layouts.dtsi>
 
 / {
-totem_layout: totem_layout{
+  totem_layout: totem_layout{
     compatible = "zmk,physical-layout";
     display-name = "TOTEM Keyboard Layout";
     transform = <&default_transform>;
-    keys  //                     w   h    x    y     rot    rx    ry
+    keys  //                 w   h    x    y     rot    rx    ry
     = <&key_physical_attrs 100 100   70  136 (-1000)   120   186>
     , <&key_physical_attrs 100 100  176   54  (-400)   226   104>
     , <&key_physical_attrs 100 100  284    0       0     0     0>
@@ -45,5 +45,5 @@ totem_layout: totem_layout{
     , <&key_physical_attrs 100 100  994  332       0     0     0>
     , <&key_physical_attrs 100 100 1346  289    1000  1396   339>
     ;
-};
+  };
 };
