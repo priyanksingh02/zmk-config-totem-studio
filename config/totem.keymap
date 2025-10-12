@@ -89,8 +89,8 @@
       bindings = <
         &kp B &hm_l LCTRL L &hm_l LALT D &hm_l LCMD C &kp V &kp J &hm_r RCMD Y &hm_r RALT O &hm_r RCTRL U &kp COMMA
         &kp N &hl_l NUM R &hl_l SYM T &hl_l SYS S &kp G &kp P &hl_r SYS H &hl_r SYM A &hl_r NUM E &kp I
-        &kp X &kp Q &kp M &kp W &kp Z &kp K &kp F &kp SQT &kp UNDER &kp DOT
-        &none &none &kp SPACE &sk LSHFT &none &key_repeat &none &none
+        &kp X &kp Q &kp M &kp W &kp Z &kp K &kp F &kp UNDER &kp DOT &kp SQT
+        &none &none &kp SPACE &sk LSHFT &kp LC(LS(LALT)) &key_repeat &none &none
       >;
     };
     sym {
