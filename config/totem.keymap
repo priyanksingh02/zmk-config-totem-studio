@@ -125,42 +125,42 @@
     compatible = "zmk,keymap";
     alpha {
       bindings = <
-        &kp B &hm_l LCTRL L &hm_l LALT D &hm_l LCMD C &kp V /**/ &kp J &hm_r RCMD Y &hm_r RALT O &hm_r RCTRL U &kp COMMA
-        &kp N &hl_l NM1 R &hl_l SM1 T &hl_l SYS S &kp G /**/ &kp P &hl_r SYS H &hl_r SM1 A &hl_r NM1 E &kp I
-        &kp X &kp Q &kp M &kp W &kp Z /**/ &kp K &kp F &kp SQT &kp UNDER &kp DOT
-        &none /**/ &none &kp SPACE &sk LSHFT /**/ &none &key_repeat &none /**/ &none
+        &kp B &hm_l LCTRL L &hm_l LALT D &hm_l LCMD C &kp V &kp J &hm_r RCMD Y &hm_r RALT O &hm_r RCTRL U &kp COMMA
+        &kp N &hl_l NM1 R &hl_l SM1 T &hl_l SYS S &kp G &kp P &hl_r SYS H &hl_r SM1 A &hl_r NM1 E &kp I
+        &kp X &kp Q &kp M &kp W &kp Z &kp K &kp F &kp SQT &kp UNDER &kp DOT
+        &none &none &kp SPACE &sk LSHFT &none &key_repeat &none &none
       >;
     };
     sym {
       bindings = <
-        &kp GRAVE &kp LT &kp GT &kp MINUS &kp PIPE /**/ &kp CARET &kp LBRC &kp RBRC &kp DOLLAR &kp QMARK
-        &kp EXCL &kp ASTRK &kp SLASH &kp EQUAL &kp AMPS /**/ &kp HASH &kp LPAR &kp RPAR &kp SEMI &kp DQT
-        &kp TILDE &kp PLUS &kp LBKT &kp RBKT &kp PERCENT /**/ &kp AT &kp COLON &kp BACKSLASH &kp DOT &kp SQT
-        &trans /**/ &trans &trans &trans /**/ &trans &trans &trans /**/ &trans
+        &kp GRAVE &kp LT &kp GT &kp MINUS &kp PIPE &kp CARET &kp LBRC &kp RBRC &kp DOLLAR &kp QMARK
+        &kp EXCL &kp ASTRK &kp SLASH &kp EQUAL &kp AMPS &kp HASH &kp LPAR &kp RPAR &kp SEMI &kp DQT
+        &kp TILDE &kp PLUS &kp LBKT &kp RBKT &kp PERCENT &kp AT &kp COLON &kp BACKSLASH &kp DOT &kp SQT
+        &trans &trans &trans &trans &trans &trans &trans &trans
       >;
     };
     num {
       bindings = <
-        &trans &trans &trans &kp COMMA &trans /**/ &trans &kp DOT &trans &trans &trans
-        &kp N7 &kp N5 &kp N3 &kp N1 &trans /**/ &trans &kp N0 &kp N2 &kp N4 &kp N6
-        &trans &trans &trans &kp N9 &trans /**/ &trans &kp N8 &trans &trans &trans
-        &trans /**/ &trans &trans &trans /**/ &trans &trans &trans /**/ &trans
+        &trans &trans &trans &kp COMMA &trans &trans &kp DOT &trans &trans &trans
+        &kp N7 &kp N5 &kp N3 &kp N1 &trans &trans &kp N0 &kp N2 &kp N4 &kp N6
+        &trans &trans &trans &kp N9 &trans &trans &kp N8 &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans &trans
       >;
     };
     sys {
       bindings = <
-        &trans &kp ESC &kp LC(LS(TAB)) &kp RC(TAB) &trans /**/ &trans &td LG(V) LG(C) &kp UP &td Q BSPC &trans
-        &td LG(GRAVE) TAB &td HOME DEL &td END LG(LBKT) &kp LG(RBKT) &trans /**/ &trans &td TAB LEFT &kp DOWN &kp RIGHT &kp ENTER
-        &trans &trans &trans &trans &trans /**/ &trans &kp LC(LG(LS(N4))) &kp PG_UP &kp PG_DN &trans
-        &trans /**/ &trans &to AL1 &trans /**/ &none &kp LCMD &trans /**/ &trans
+        &trans &kp ESC &kp LC(LS(TAB)) &kp RC(TAB) &trans &trans &td LG(V) LG(C) &kp UP &td Q BSPC &trans
+        &td LG(GRAVE) TAB &td HOME DEL &td END LG(LBKT) &kp LG(RBKT) &trans &trans &td TAB LEFT &kp DOWN &kp RIGHT &kp ENTER
+        &trans &trans &trans &trans &trans &trans &kp LC(LG(LS(N4))) &kp PG_UP &kp PG_DN &trans
+        &trans &trans &to AL1 &trans &none &kp LCMD &trans &trans
       >;
     };
     fn {
       bindings = <
-        &bt BT_CLR_ALL &trans &trans &kp F11 &trans /**/ &trans &kp F12 &trans &trans &trans
-        &kp F7 &kp F5 &kp F3 &kp F1 &trans /**/ &trans &kp F0 &kp F2 &kp F4 &kp F6
-        &trans &trans &trans &kp F9 &trans /**/ &trans &kp F8 &trans &trans &trans
-        &trans /**/ &trans &to AL1 &trans /**/ &trans &trans &trans /**/ &trans
+        &bt BT_CLR_ALL &trans &trans &kp F11 &trans &trans &kp F12 &trans &trans &trans
+        &kp F7 &kp F5 &kp F3 &kp F1 &trans &trans &kp F0 &kp F2 &kp F4 &kp F6
+        &trans &trans &trans &kp F9 &trans &trans &kp F8 &trans &trans &trans
+        &trans &trans &to AL1 &trans &trans &trans &trans &trans
       >;
     };
   };
