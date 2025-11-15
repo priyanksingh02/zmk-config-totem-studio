@@ -88,9 +88,9 @@
     alpha {
       bindings = <
         &kp B &hm_l LCTRL L &hm_l LALT D &hm_l LCMD C &kp V &kp J &hm_r RCMD Y &hm_r RALT O &hm_r RCTRL U &kp COMMA
-        &kp N &hl_l NUM R &hl_l SYM T &hl_l SYS S &kp G &kp P &hl_r SYS H &hl_r SYM A &hl_r NUM E &kp I
+        &hl_l NUM N &kp R &hl_l SYM T &hl_l SYS S &kp G &kp P &hl_r SYS H &hl_r SYM A &kp E &hl_r NUM I
         &kp X &kp Q &kp M &kp W &kp Z &kp K &kp F &kp UNDER &kp DOT &kp SQT
-        &none &none &kp SPACE &sk LSHFT &kp LC(LS(LALT)) &key_repeat &none &none
+        &none &none &key_repeat &sk LSHFT &kp LC(LS(LALT)) &kp SPACE &none &none
       >;
     };
     sym {
@@ -103,17 +103,17 @@
     };
     num {
       bindings = <
-        &trans &trans &trans &kp COMMA &trans &trans &kp DOT &trans &trans &trans
-        &kp N7 &kp N5 &kp N3 &kp N1 &trans &trans &kp N0 &kp N2 &kp N4 &kp N6
-        &trans &trans &trans &kp N9 &trans &trans &kp N8 &trans &trans &trans
+        &trans &kp COMMA &kp N9 &kp N7 &trans &trans &kp N6 &kp N8 &kp DOT &trans
+        &none &kp N5 &kp N3 &kp N1 &trans &trans &kp N0 &kp N2 &kp N4 &none
+        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans &trans
       >;
     };
     sys {
       bindings = <
-        &trans &kp ESC &kp LC(LS(TAB)) &kp RC(TAB) &trans &trans &td LG(V) LG(C) &kp UP &td Q BSPC &trans
-        &td LG(GRAVE) TAB &td HOME DEL &td END LG(LBKT) &kp LG(RBKT) &trans &trans &td TAB LEFT &kp DOWN &kp RIGHT &kp ENTER
-        &trans &trans &trans &trans &trans &trans &kp LC(LG(LS(N4))) &kp PG_UP &kp PG_DN &trans
+        &kp GRAVE &kp ESC &kp LC(LS(TAB)) &kp RC(TAB) &trans &trans &td LG(V) LG(C) &kp UP &td Q BSPC &trans
+        &kp TAB &kp DEL &kp HOME &kp END &trans &trans &td TAB LEFT &kp DOWN &kp RIGHT &kp ENTER
+        &trans &trans &kp LG(LBKT) &kp LG(RBKT) &trans &trans &kp LC(LG(LS(N4))) &kp PG_UP &kp PG_DN &trans
         &trans &trans &to ALPHA &trans &none &kp LCMD &trans &trans
       >;
     };
